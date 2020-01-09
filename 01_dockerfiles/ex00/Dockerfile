@@ -1,4 +1,5 @@
 FROM alpine
-RUN apk update && apk add \
-	vim
-ENTRYPOINT ["vim"]
+
+RUN apk update && apk add vim
+
+ENTRYPOINT vim
